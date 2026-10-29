@@ -32,6 +32,9 @@
 #oceanHero.selecting .chosen{animation-play-state:paused;filter:drop-shadow(0 0 14px #fff) drop-shadow(0 0 22px #8fe8ff)}
 .tap-confirm{position:absolute;z-index:8;left:50%;top:40%;translate:-50% -50%;padding:9px 15px;border:2px solid #fff;border-radius:999px;background:#ffffffdf;color:#14529a;font-weight:800;font-size:14px;box-shadow:0 8px 24px #063d7d33;animation:confirm-pop 600ms cubic-bezier(.2,1.4,.4,1) both}
 #currencyLesson{position:absolute;z-index:40;inset:0;min-height:100%;padding:5% 6% 8%;color:#123d73;background:linear-gradient(180deg,#b9efff 0%,#e8f9ff 42%,#f9fcff 100%);animation:lesson-rise 420ms cubic-bezier(.2,1,.35,1) both}
+#currencyLesson{height:100%;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#currencyLesson::-webkit-scrollbar{display:none}
+@media(max-height:760px){.lesson-hero{height:26%;margin-top:1%}.lesson-title{font-size:24px}.lesson-sub{margin-bottom:3%;font-size:14px}.lesson-card{padding:16px}.knowledge-card::before{margin:-16px -16px 12px}.knowledge-card .lesson-fact{padding:10px 2px}.knowledge-card .lesson-next{margin-top:12px}}
 .lesson-back{position:absolute;z-index:2;left:5%;top:2.4%;width:44px;height:44px;border:0;border-radius:50%;background:#ffffffd9;color:#164b83;font-size:26px;font-weight:900;box-shadow:0 6px 18px #174f8120}
 .lesson-progress{display:flex;justify-content:flex-start;gap:8px;margin:1% 0 0 14%}.lesson-progress i{width:10px;height:10px;border-radius:50%;background:#b9d4e8}.lesson-progress i.on{width:28px;background:#397eea}
 .lesson-hero{position:relative;height:34%;display:grid;place-items:center;margin-top:2%}.lesson-character{width:58%;max-height:100%;object-fit:contain;filter:drop-shadow(0 12px 14px #24598725)}
